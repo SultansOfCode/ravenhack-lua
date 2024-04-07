@@ -1,0 +1,9 @@
+Module
+  name: ravenhack
+  description: Game hacks
+  author: UnknownCheats
+  website: www.unknowncheats.me
+  sandboxed: true
+  scripts: [ ravenhack ]
+  @onLoad: init()
+  @onUnload: terminate()

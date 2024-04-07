@@ -1,0 +1,65 @@
+MainWindow
+  id: rhWindow
+  size: 310 150
+
+  Button
+    id: zoomMinusButton
+    text: Zoom -
+    anchors.left: parent.left
+    anchors.top: parent.top
+    @onClick: zoomMinusButtonClick()
+
+  Button
+    id: zoomPlusButton
+    text: Zoom +
+    anchors.left: prev.right
+    anchors.top: parent.top
+    @onClick: zoomPlusButtonClick()
+
+  Button
+    id: zoomResetButton
+    text: Zoom reset
+    anchors.left: prev.right
+    anchors.top: parent.top
+    @onClick: zoomResetButtonClick()
+
+  Button
+    id: noShadersButton
+    text: No shaders
+    anchors.left: parent.left
+    anchors.top: prev.bottom
+    @onClick: noShadersButtonClick()
+
+  Button
+    id: worldLightButton
+    text: World light
+    anchors.left: prev.right
+    anchors.top: prev.top
+    @onClick: worldLightButtonClick()
+
+  Button
+    id: hitMinigameButton
+    text: Hit minigame
+    anchors.left: prev.right
+    anchors.top: prev.top
+    @onClick: hitMinigameButtonClick()
+
+  CheckBox
+    id: autoMinigameCheckBox
+    anchors.left: parent.left
+    anchors.top: prev.bottom
+    size: 20 20
+    @onCheckChange: autoMinigameCheckBoxCheckChange()
+
+  Label
+    id: autoMinigameLabel
+    text: Auto minigame
+    anchors.left: prev.right
+    anchors.top: prev.top
+
+  Button
+    id: getAddressButton
+    text: Get address
+    anchors.left: parent.left
+    anchors.top: prev.bottom
+    @onClick: getAddressButtonClick()
